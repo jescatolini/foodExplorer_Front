@@ -1,24 +1,28 @@
-import { createContext, useContext, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-const MealsContext = createContext();
+import { useMeals } from '../../../../hooks/meals';
 
-function MealsProvider({ children }) {
-  const [mealsInDB, setMealsInDB] = useState([]);
-  const [organizedMeals, setOrganizedMeals] = useState([]);
+export function useSearchBar() {
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  return (
-    <MealsContext.Provider
-      value={{ mealsInDB, setMealsInDB, organizedMeals, setOrganizedMeals }}
-    >
-      {children}
-    </MealsContext.Provider>
-  );
+  const { mealsInDB, setMealsInDB, organizedMeals, setOrganizedMeals } =
+    useMeals();
+
+  function handleSearch(event) {
+    event.preventDefault();
+
+    const userSearch = event.target.userSearch.value;
+
+    if (location.pathname !== '/') {
+      return navigate(`/?search=${userSearch}`);
+    }
+
+    const mealsFiltered = mealsInDB.filter(meal =>
+      meal.title.toLowerCase().includes(userSearch.toLowerCase())
+    );
+
+    setOrganizedMeals(mealsFiltered);
+  }
+  return { handleSearch };
 }
-
-function useMeals() {
-  const context = useContext(MealsContext);
-
-  return context;
-}
-
-export { MealsProvider, useMeals };
