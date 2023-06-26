@@ -130,7 +130,7 @@ To start a local server for the frontend, use the following command:
 If everything goes well, you will receive a message similar to this:
 
 ```bash
-  VITE v3.0.9  ready in 200 ms
+  VITE v4.3.9  ready in 383 ms
 
   ➜  Local:   http://127.0.0.1:5173/
   ➜  Network: use --host to expose
