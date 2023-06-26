@@ -104,7 +104,7 @@ To begin, clone the project by executing the following command in your terminal:
 Navigate to the project directory by using the following command:
 
 ```bash
-  $cd ood_explorer-frontend
+  $cd foodExplorer_Front
 /
 ```
 
