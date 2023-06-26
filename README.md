@@ -3,7 +3,7 @@
 Food Explorer is an application that simulates a restaurant website, allowing customers to place orders while administrators manage these orders.
 
 <h1 align="center">
-    <img src="https://s3-alpha.figma.com/hub/file/3218103994/496f6e81-95a2-42cb-84a0-9222b155f244-cover.png" alt="Project Cover">
+    <img src="https://github.com/jescatolini/foodExplorer_Front/assets/99694816/62d0a16f-e304-4068-86e5-b621c80f305a" alt="Project Cover">
 </h1>
 
 ## :scroll: Table of Contents
@@ -32,7 +32,7 @@ Food Explorer is an application that simulates a restaurant website, allowing cu
 **Customer**
 
 <h1 align="center">
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/99694816/248943662-a0572180-78c5-4324-a223-36d90179133c.gif" alt="Customer version gif">
+  <img src="https://github.com/jescatolini/foodExplorer_Front/assets/99694816/420cd1b6-5ea4-4486-aca9-521c3c58ddac" alt="Customer version gif">
 </h1>
 
 </br>
